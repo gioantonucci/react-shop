@@ -1,6 +1,5 @@
 import React from "react";
 import Order from "../components/Order";
-import '../styles/MyOrder.scss'
 
 function MyOrder() {
   return (

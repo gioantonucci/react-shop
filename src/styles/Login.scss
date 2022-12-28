@@ -6,7 +6,7 @@
   display: grid;
   place-items: center;
 }
-.form-container {
+.login-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   width: 300px;
@@ -18,22 +18,16 @@
   justify-self: center;
 }
 
-.title {
-  font-size: var(--lg);
-  margin-bottom: 12px;
-  text-align: center;
-}
-.subtitle {
-  color: var(--very-light-pink);
-  font-size: var(--md);
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 32px;
-  text-align: center;
-}
 .form {
   display: flex;
   flex-direction: column;
+}
+.form a {
+  font-size: var(--sm);
+  text-align: center;
+  color: var(--hospital-green);
+  text-decoration: none;
+  margin-bottom: 52px;
 }
 .label {
   font-size: var(--sm);
@@ -83,13 +77,6 @@
 .login-button {
   margin-top: 14px;
   margin-bottom: 30px;
-}
-.form a {
-  font-size: var(--sm);
-  text-align: center;
-  color: var(--hospital-green);
-  text-decoration: none;
-  margin-bottom: 52px;
 }
 
 @media (max-width: 640px) {

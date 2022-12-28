@@ -1,13 +1,11 @@
 import React from "react";
 import ProductList from "../containers/ProductList";
-import '../styles/Home.scss'
+import "../styles/Home.scss";
 
 const Home = () => {
   return (
     <section className="main-container">
-     
-       <ProductList />
-     
+      <ProductList />
     </section>
   );
 };

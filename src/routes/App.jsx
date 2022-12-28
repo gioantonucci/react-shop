@@ -25,7 +25,7 @@ const App = () => {
           <Route exact path="/recovery-password" component={RecoveryPass} />
           <Route exact path="/send-email" component={SendEmail} />
           <Route exact path="/new-password" component={NewPassword} />
-          <Route exact path='/account' component={MyAccount} />
+          <Route exact path='/my-account' component={MyAccount} />
           <Route exact path='/sign-up' component={CreateAccount} />
           <Route exact path='/check-out' component={Checkout} />
           <Route exact path='/orders' component={Orders} />

@@ -4,7 +4,7 @@ import "../styles/Login.scss";
 function Login() {
   return (
     <div className="login">
-      <div className="form-container">
+      <div className="login-container">
         <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
         <form action="/" className="form">
           <label htmlFor="email" className="label">
