@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/Navbar.scss'
+import '../styles/Header.scss'
 
-function Navbar() {
+function Header() {
   return (
    <nav>
   <img src="../images/icons/icon_menu.svg" alt="menu" className="menu" />
@@ -42,4 +42,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Header;

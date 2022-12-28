@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import Layout from "../containers/Layout";
 import Login from "../containers/Login";
 import RecoveryPass from "../containers/RecoveryPass";
@@ -12,7 +12,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Layout>
-      <Navbar/>
+      <Header/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
