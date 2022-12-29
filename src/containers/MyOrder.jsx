@@ -1,5 +1,4 @@
 import React from "react";
-import Order from "../components/Order";
 import OrderItem from "../components/OrderItem";
 
 function MyOrder() {
@@ -19,7 +18,7 @@ function MyOrder() {
           <p>
             <span>Total</span>
           </p>
-          <p>$120.00</p>
+          <p>$150.00</p>
         </div>
         <button class="primary-button">Checkout</button>
       </div>

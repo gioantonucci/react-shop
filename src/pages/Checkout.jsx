@@ -8,7 +8,7 @@ function Checkout() {
     <div className="checkout-container">
     <h1 className="checkout-title">My order</h1>
     <div className="checkout-content">
-      <div className="order">
+      <div className="order-summary">
         <p>
           <span>02.10.21</span>
           <span>6 articles</span>
