@@ -1,7 +1,8 @@
 import React from "react";
+import '../styles/Order.scss'
 
 function OrderItem() {
-  return (  //ex shopping cart
+  return (  
     <div className="order-item"> 
     <figure>
         <img

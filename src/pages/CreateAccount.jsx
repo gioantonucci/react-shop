@@ -5,7 +5,7 @@ function CreateAccount() {
   return (
     <div class="create-account">
       <div class="create-account-container">
-        <h1 class="title">My account</h1>
+        <h1 class="create-account-title">My account</h1>
         <form action="/" class="create-account-form">
           <div>
             <label for="name" class="label">
@@ -42,7 +42,7 @@ function CreateAccount() {
           <input
             type="submit"
             value="Create account"
-            class="primary-button login-button"
+            class="primary-button create-account-button"
           />
         </form>
       </div>

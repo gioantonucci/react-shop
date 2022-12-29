@@ -11,16 +11,15 @@
   grid-template-rows: auto 1fr auto;
   width: 300px;
 }
-
 .checkout-content {
   display: flex;
   flex-direction: column;
 }
-.title {
+.checkout-title {
   font-size: var(--lg);
   margin-bottom: 40px;
 }
-.order {
+.order-summary {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
@@ -28,45 +27,107 @@
   background-color: var(--text-input-field);
   margin-bottom: 24px;
   border-radius: 8px;
-  padding: 0 24px;
+  padding: 16px 24px;
 }
-.order p:nth-child(1) {
+.order-summary p:nth-child(1) {
   display: flex;
   flex-direction: column;
 }
-.order p span:nth-child(1) {
-  font-size: var(--md);
+.order-summary p span:nth-child(1) {
+  font-size: var(--md); 
   font-weight: bold;
 }
-.order p span:nth-child(2) {
+.order-summary p span:nth-child(2) {
   font-size: var(--sm);
   color: var(--very-light-pink);
 }
-.order p:nth-child(2) {
+.order-summary p:nth-child(2) {
   text-align: end;
   font-weight: bold;
 }
 
 .order-item {
-	display: grid;
-	grid-template-columns: auto 1fr auto auto;
-	gap: 16px;
-	margin-bottom: 24px;
-	align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
 }
 .order-item figure {
-	margin: 0;
+  margin: 0;
 }
 .order-item figure img {
-	width: 70px;
-	height: 70px;
-	border-radius: 20px;
-	object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 .order-item p:nth-child(2) {
-	color: var(--very-light-pink);
+  color: var(--very-light-pink);
 }
 .order-item p:nth-child(3) {
-	font-size: var(--md);
-	font-weight: bold;
+  font-size: var(--md);
+  font-weight: bold;
+}
+.my-order {
+  width: 360px;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+}
+.title-container {
+  display: flex;
+}
+.title-container img {
+  transform: rotate(180deg);
+  margin-right: 14px;
+}
+.my-order-title {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+.order-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.order-item figure {
+  margin: 0;
+}
+.order-item figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.order-item p:nth-child(2) {
+  color: var(--very-light-pink);
+}
+.order-item p:nth-child(3) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+
+
+.primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+}
+@media (max-width: 640px) {
+  .my-order {
+    width: 100%;
+  }
 }
