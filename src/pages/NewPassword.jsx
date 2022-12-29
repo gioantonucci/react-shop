@@ -3,12 +3,12 @@ import '../styles/NewPassword.scss'
 
 function NewPassword() {
   return (
-    <div className="login">
-    <div className="form-container">
+    <div className="new-password">
+    <div className="new-password-container">
       <img src="./images/logos/logo_yard_sale.svg" alt="logo" className="logo" />
-      <h1 className="title">Create a new password</h1>
-      <p className="subtitle">Enter a new password for your account</p>
-      <form action="/" className="form">
+      <h1 className="new-password-title">Create a new password</h1>
+      <p className="new-password-subtitle">Enter a new password for your account</p>
+      <form action="/" className="new-password-form">
         <label htmlFor="password" className="label">
           Password
         </label>

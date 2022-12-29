@@ -1,7 +1,7 @@
 import React from "react";
-import '../styles/RecoveryPass.scss'
+import '../styles/PasswordRecovery.scss'
 
-const RecoveryPass = () => {
+const PasswordRecovery = () => {
   return (
     <div className="container">
       <div className="form-container">
@@ -25,4 +25,4 @@ const RecoveryPass = () => {
   );
 };
 
-export default RecoveryPass;
+export default PasswordRecovery;
