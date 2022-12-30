@@ -13,6 +13,7 @@ import MyAccount from "../pages/MyAccount";
 import CreateAccount from "../pages/CreateAccount";
 import Checkout from "../pages/Checkout";
 import Orders from "../pages/Orders";
+import Product from "../pages/Product";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path='/sign-up' component={CreateAccount} />
           <Route exact path='/check-out' component={Checkout} />
           <Route exact path='/orders' component={Orders} />
+          <Route exact path='/product-detail' component={Product} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Layout>

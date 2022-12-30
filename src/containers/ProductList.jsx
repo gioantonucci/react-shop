@@ -1,5 +1,5 @@
 import React from "react";
-import ProdcutItem from "../components/ProductItem";
+import ProdcutItem from "@components/ProductItem";
 
 function ProductList() {
   return (

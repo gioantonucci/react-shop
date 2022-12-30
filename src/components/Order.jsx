@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/Order.scss";
+import "@styles/Order.scss";
+import arrow from '@icons/flechita.svg'
 
 function Order() {
   return (
@@ -9,7 +10,7 @@ function Order() {
         <span>6 articles</span>
       </p>
       <p>$120.00</p>
-      <img src="../icons/flechita.svg" alt="arrow" />
+      <img src={arrow} alt="arrow" />
     </div>
   );
 }
