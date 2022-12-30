@@ -1,5 +1,5 @@
 import React from "react";
-import MyOrder from "../containers/MyOrder";
+import MyOrder from "@containers/MyOrder";
 
 function Orders() {
   return (

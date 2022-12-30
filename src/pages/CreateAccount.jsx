@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/CreateAccount.scss'
+import '@styles/CreateAccount.scss'
 
 function CreateAccount() {
   return (
@@ -24,7 +24,7 @@ function CreateAccount() {
             <input
               type="email"
               id="email"
-              placeholder="giovannamantonucci@gmail.com"
+              placeholder="giovanna@example.com"
               class="input input-email"
             />
 

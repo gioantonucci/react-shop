@@ -1,10 +1,10 @@
 import React from 'react'
-import ProductDetail from '../containers/ProductDetail'
+import ProductDetail from '@containers/ProductDetail'
 
 function Product() {
   return (
     <div>
-        <ProductDetail/>
+      <ProductDetail />
     </div>
   )
 }

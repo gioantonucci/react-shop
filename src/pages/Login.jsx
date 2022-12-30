@@ -1,11 +1,9 @@
 import React from "react";
-import "../styles/Login.scss";
-
+import "@styles/Login.scss";
 function Login() {
   return (
     <div className="login">
       <div className="login-container">
-        <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
         <form action="/" className="form">
           <label htmlFor="email" className="label">
             Email address
@@ -13,7 +11,7 @@ function Login() {
           <input
             type="email"
             id="email"
-            placeholder="camilayokoo@gmail.com"
+            placeholder="giovanna@example.com"
             className="input input-email"
           />
           <label htmlFor="password" className="label">

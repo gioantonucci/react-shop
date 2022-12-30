@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/MyAccount.scss";
+import "@styles/MyAccount.scss";
 
 function MyAccount() {
   return (
@@ -12,13 +12,13 @@ function MyAccount() {
               Name
             </label>
             <p type="text" id="name" className="value">
-              Camila Yokoo
+             Giovanna Antonucci
             </p>
             <label htmlFor="email" className="label">
               Email address
             </label>
             <p type="email" id="email" className="value">
-              camilayokoo@gmail.com
+            giovanna@example.com
             </p>
             <label htmlFor="password" className="label">
               Password
