@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import "@styles/Login.scss";
-import { parseSrc } from "html-loader/dist/utils";
 
 function Login() {
   const form = useRef(null);
