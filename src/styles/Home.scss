@@ -33,7 +33,9 @@
   font-size: var(--sm);
   color: var(--very-light-pink);
 }
-
+.add-to-cart {
+  cursor: pointer;
+}
 @media (max-width: 640px) {
   .cards-container {
     display: grid;
