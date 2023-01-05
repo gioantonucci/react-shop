@@ -4,13 +4,13 @@ import close from '@icons/icon_close.png'
 import '@styles/ProductDetail.scss'
 
 
-function ProductDetail() {
+function ProductDetail(id) {
   return (
     <aside class="product-detail">
       <div class="product-detail-close">
         <img src={close} alt="close" />
       </div>
-      <ProductInfo />
+      <ProductInfo id={id} />
     </aside>
   );
 }
