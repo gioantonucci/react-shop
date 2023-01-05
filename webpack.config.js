@@ -7,20 +7,21 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: '/'
+    publicPath: "/",
   },
   mode: "development",
   resolve: {
+    fallback: { 'path': require.resolve('path-browserify') },
     extensions: [".js", ".jsx"],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components/'),
-      '@containers': path.resolve(__dirname, 'src/containers/'),
-      '@pages': path.resolve(__dirname, 'src/pages/'),
-      '@styles': path.resolve(__dirname, 'src/styles/'),
-      '@icons': path.resolve(__dirname, 'src/assets/icons/'),
-      '@logos': path.resolve(__dirname, 'src/assets/logos/'),
-      '@hooks': path.resolve(__dirname, 'src/hooks/')
-    }
+      "@components": path.resolve(__dirname, "src/components/"),
+      "@containers": path.resolve(__dirname, "src/containers/"),
+      "@pages": path.resolve(__dirname, "src/pages/"),
+      "@styles": path.resolve(__dirname, "src/styles/"),
+      "@icons": path.resolve(__dirname, "src/assets/icons/"),
+      "@logos": path.resolve(__dirname, "src/assets/logos/"),
+      "@hooks": path.resolve(__dirname, "src/hooks/"),
+    },
   },
   module: {
     rules: [
@@ -32,12 +33,8 @@ module.exports = {
         },
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-          },
-        ],
+        test: /\.html$/i,
+        loader: "html-loader",
       },
       {
         test: /\.(css|scss)$/,
@@ -45,8 +42,8 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        type: 'asset'
-      }
+        type: "asset",
+      },
     ],
   },
   plugins: [
