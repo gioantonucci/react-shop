@@ -1,34 +1,37 @@
 @use "vars";
 
-.menu {
+.toggle-menu {
   width: 100px;
-  height: auto;
+	height: auto;
   border: 1px solid var(--very-light-pink);
-  border-radius: 6px;
   padding: 20px 20px 0 20px;
+  border-radius: 6px;
+  position: absolute;
+  top: 60px;
+  right: 50px;
 }
-.menu ul {
+.toggle-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.menu ul li {
+.toggle-menu ul li {
   text-align: end;
 }
-.menu ul li:nth-child(1),
-.menu ul li:nth-child(2) {
+.toggle-menu ul li:nth-child(1),
+.toggle-menu ul li:nth-child(2) {
   font-weight: bold;
 }
 
-.menu ul li:last-child {
+.toggle-menu ul li:last-child {
   padding-top: 20px;
   border-top: 1px solid var(--very-light-pink);
 }
-.menu ul li:last-child a {
+.toggle-menu ul li:last-child a {
   color: var(--hospital-green);
   font-size: var(--sm);
 }
-.menu ul li a {
+.toggle-menu ul li a {
   color: var(--black);
   text-decoration: none;
   margin-bottom: 20px;
