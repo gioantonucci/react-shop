@@ -129,6 +129,19 @@
   font-weight: bold;
   height: 50px;
 }
+
+.primary-button-disabled {
+  background-color: var(--very-light-pink);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: no-drop;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+}
+
 @media (max-width: 640px) {
   .my-order {
     width: 100%;
