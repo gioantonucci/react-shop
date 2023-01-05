@@ -1,6 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import addToCart from '@icons/bt_add_to_cart.svg'
+
 const ProdcutItem = () => {
+
+  const [cart, setCart] = useState([])
+
+  const handleCart = () => {
+    setCart('Agregado')
+  }
+
   return (
     <div className="product-card">
       <img
@@ -13,9 +21,10 @@ const ProdcutItem = () => {
           <p>$120,00</p>
           <p>Bike</p>
         </div>
-        <figure>
-          <img src={addToCart} alt="" />
-        </figure>
+        <div onClick={handleCart} >
+          <img src={addToCart} alt="add to cart" />
+        </div>
+        {cart}
       </div>
     </div>
   );
